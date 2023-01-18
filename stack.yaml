@@ -1,0 +1,11 @@
+resolver: lts-20.7
+compiler: ghc-9.2.5
+allow-newer: true
+packages:
+- '.' 
+extra-deps:
+- dequeue-0.1.12
+#- clock-0.7.2
+- elsa-0.2.2.0
+#- json-0.10
+

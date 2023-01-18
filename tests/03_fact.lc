@@ -1,0 +1,71 @@
+
+--------------------------------------------------------------------------------
+-- Booleans
+--------------------------------------------------------------------------------
+
+let TRUE  = \x y -> x
+let FALSE = \x y -> y
+let ITE   = \b x y -> b x y
+let AND   = \b1 b2 -> ITE b1 b2 FALSE
+let OR    = \b1 b2 -> ITE b1 TRUE b2
+
+--------------------------------------------------------------------------------
+-- Numbers
+--------------------------------------------------------------------------------
+
+let ZERO  = \f x -> x
+let ONE   = \f x -> f x
+let TWO   = \f x -> f (f x)
+let THREE = \f x -> f (f (f x))
+let FOUR  = \f x -> f (f (f (f x)))
+let FIVE  = \f x -> f (f (f (f (f x))))
+let SIX   = \f x -> f (f (f (f (f (f x)))))
+
+let INC   = \n f x -> f (n f x)
+let ADD   = \n m -> n INC m
+let MUL   = \n m -> n (ADD m) ZERO
+
+--------------------------------------------------------------------------------
+-- Pairs
+--------------------------------------------------------------------------------
+
+let PAIR  = \x y b -> ITE b x y
+let FST   = \p     -> p TRUE
+let SND   = \p     -> p FALSE
+
+--------------------------------------------------------------------------------
+-- Ignore this definition; it's a hack to allow you to test some parts before
+-- completing others
+--------------------------------------------------------------------------------
+
+let TODO  = \i g n o r e -> i g n o r e
+
+--------------------------------------------------------------------------------
+-- do not modify text BEFORE this line
+--------------------------------------------------------------------------------
+
+let FactBase = TODO       -- (a)
+let FactFunc = TODO       -- (b)
+let FactOut  = TODO       -- (c)
+
+let FACT     = \n -> FactOut (n FactFunc FactBase)   
+
+--------------------------------------------------------------------------------
+-- do not modify text AFTER this line
+--------------------------------------------------------------------------------
+
+eval fact_zero :
+  FACT ZERO
+  =~> ONE
+
+eval fact_one :
+  FACT ONE
+  =~> ONE
+
+eval fact_two :
+  FACT TWO
+  =~> TWO
+
+eval fact_three :
+  FACT THREE
+  =~> SIX
