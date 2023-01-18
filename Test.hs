@@ -183,7 +183,7 @@ type Score = IORef (Int, Int)
 runTests :: [Score -> TestTree] -> IO ()
 runTests groups = do
   sc <- initScore
-  defaultMainWithIngredients (includingOptions coreOptions : defaultIngredients)
+  defaultMain--WithIngredients (includingOptions coreOptions : defaultIngredients)
     (tests sc groups) `catch` (\(e :: ExitCode) -> do
       (n, tot) <- readIORef sc
       putStrLn ("OVERALL SCORE = " ++ show n ++ " / "++ show tot)
