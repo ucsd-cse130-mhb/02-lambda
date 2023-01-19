@@ -1,5 +1,27 @@
 # Assignment 2 : Lambda Calculus (200 points)
 
+## Working Environment
+
+There are a few different ways that you can work on this assignment.
+
+# GitHub Codespaces
+
+
+# Devcontainer
+
+We have created a [VS Code Development Container](https://code.visualstudio.com/docs/remote/containers) 
+to help bootstrap your Haskell/Elsa development. This is a Docker container 
+that is pre-configured with a Haskell environment that you can interact with 
+directly from [VS Code](https://code.visualstudio.com/Download).
+
+This requires a bit more setup work and requires having Docker installed and 
+running. This method may not work out on Mac M1s -- contact us for support if
+you run into trouble on a Mac M1. 
+
+You can download the latest version of the [devcontainer here](). 
+See the included [README]() for installation instructions.
+
+
 ## Submission Instructions
 To submit your code, first commit and push your repository to GitHub. To see the output of the auto-grader tests, click 'Pull Requests' and select Feedback. You can see the output of the tests under the Checks tab.
 
@@ -17,13 +39,12 @@ The assignment is in the files:
 2. `tests/02_minus.lc`
 3. `tests/03_fact.lc`
 
-... what about dev containers ....
+You can use GitHub Codespaces to work on this assignment by running VS Code from within your web browser
 
-You can edit these files and then run them locally on your machine:,
+You can also edit these files and then run them locally on your machine:,
 
 * by running `$ stack exec elsa path/to/file.lc` on a unix machine (with stack installed), OR
 * by locally installing `elsa` following [these instructions](https://github.com/ucsd-progsys/elsa#install)
-
 
 Finally, a fallback option is to run the assignment files 
 through the [web interface](https://goto.ucsd.edu/elsa/index.html).

@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+-- DO NOT MODIFY THIS SEGMENT
+-------------------------------------------------------------------------------
+
+let TRUE  = \x y -> x
+let FALSE = \x y -> y
+let ITE   = \b x y -> b x y
+let NOT   = \b x y -> b y x
+let AND   = \b1 b2 -> ITE b1 b2 FALSE
+let OR    = \b1 b2 -> ITE b1 TRUE b2
+
+let PAIR  = \x y b -> b x y
+let FST   = \p     -> p TRUE
+let SND   = \p     -> p FALSE
+
+let TRIPLE = \x y z s -> s x y z
+let FST3   = \t -> t (\x y z -> x)
+let SND3   = \t -> t (\x y z -> y)
+let TRD3   = \t -> t (\x y z -> z)
+
+-------------------------------------------------------------------------------
+-- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS
+-------------------------------------------------------------------------------
+eval or_ff_tt :
+  OR FALSE TRUE
+  -- (a) fill in your reductions here
+  =d> TRUE
+
+eval add_one_zero :
+  SND (SND (PAIR apple (PAIR banana grape)))
+  -- (b) fill in your reductions here
+  =d> grape
+
+eval third_triple :
+  TRD3 (TRIPLE apple banana grape)
+  -- (c) fill in your reductions here
+  =d> grape
