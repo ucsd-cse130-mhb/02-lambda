@@ -2,7 +2,7 @@
   "tests": [
      { 
       "name": "or_ff_tt",
-      "run": "stack run -- -p or_ff_tt",
+      "run": "stack test --test-arguments '-p or_ff_tt'",
       "setup": "",
       "input": "",
       "output": "",
@@ -12,7 +12,7 @@
     },
      { 
       "name": "snd_snd_pairs",
-      "run": "stack run -- -p snd_snd_pairs",
+      "run": "stack test --test-arguments '-p snd_snd_pairs'",
       "setup": "",
       "input": "",
       "output": "",
@@ -22,7 +22,7 @@
     },
      { 
       "name": "third_triple",
-      "run": "stack run -- -p third_triple",
+      "run": "stack test --test-arguments '-p third_triple'",
       "setup": "",
       "input": "",
       "output": "",
@@ -32,7 +32,7 @@
     },
      { 
       "name": "skip1_false",
-      "run": "stack run -- -p skip1_false",
+      "run": "stack test --test-arguments '-p skip1_false'",
       "setup": "",
       "input": "",
       "output": "",
@@ -42,7 +42,7 @@
     },
      { 
       "name": "skip1_true_zero",
-      "run": "stack run -- -p skip1_true_zero",
+      "run": "stack test --test-arguments '-p skip1_true_zero'",
       "setup": "",
       "input": "",
       "output": "",
@@ -52,7 +52,7 @@
     },
      { 
       "name": "skip1_true_one",
-      "run": "stack run -- -p skip1_true_one",
+      "run": "stack test --test-arguments '-p skip1_true_one'",
       "setup": "",
       "input": "",
       "output": "",
@@ -62,7 +62,7 @@
     },
      { 
       "name": "decr_zero",
-      "run": "stack run -- -p decr_zero",
+      "run": "stack test --test-arguments '-p decr_zero'",
       "setup": "",
       "input": "",
       "output": "",
@@ -72,7 +72,7 @@
     },
      { 
       "name": "decr_one",
-      "run": "stack run -- -p decr_one",
+      "run": "stack test --test-arguments '-p decr_one'",
       "setup": "",
       "input": "",
       "output": "",
@@ -82,7 +82,7 @@
     },
      { 
       "name": "decr_two",
-      "run": "stack run -- -p decr_two",
+      "run": "stack test --test-arguments '-p decr_two'",
       "setup": "",
       "input": "",
       "output": "",
@@ -92,7 +92,7 @@
     },
      { 
       "name": "sub_two_zero",
-      "run": "stack run -- -p sub_two_zero",
+      "run": "stack test --test-arguments '-p sub_two_zero'",
       "setup": "",
       "input": "",
       "output": "",
@@ -102,7 +102,7 @@
     },
      { 
       "name": "sub_two_one",
-      "run": "stack run -- -p sub_two_one",
+      "run": "stack test --test-arguments '-p sub_two_one'",
       "setup": "",
       "input": "",
       "output": "",
@@ -112,7 +112,7 @@
     },
      { 
       "name": "sub_two_two",
-      "run": "stack run -- -p sub_two_two",
+      "run": "stack test --test-arguments '-p sub_two_two'",
       "setup": "",
       "input": "",
       "output": "",
@@ -122,7 +122,7 @@
     },
      { 
       "name": "sub_two_three",
-      "run": "stack run -- -p sub_two_three",
+      "run": "stack test --test-arguments '-p sub_two_three'",
       "setup": "",
       "input": "",
       "output": "",
@@ -132,7 +132,7 @@
     },
      { 
       "name": "isz_zero",
-      "run": "stack run -- -p isz_zero",
+      "run": "stack test --test-arguments '-p isz_zero'",
       "setup": "",
       "input": "",
       "output": "",
@@ -142,7 +142,7 @@
     },
      { 
       "name": "isz_one",
-      "run": "stack run -- -p isz_one",
+      "run": "stack test --test-arguments '-p isz_one'",
       "setup": "",
       "input": "",
       "output": "",
@@ -152,7 +152,7 @@
     },
      { 
       "name": "eq_zero_zero",
-      "run": "stack run -- -p eq_zero_zero",
+      "run": "stack test --test-arguments '-p eq_zero_zero'",
       "setup": "",
       "input": "",
       "output": "",
@@ -162,7 +162,7 @@
     },
      { 
       "name": "eq_zero_one",
-      "run": "stack run -- -p eq_zero_one",
+      "run": "stack test --test-arguments '-p eq_zero_one'",
       "setup": "",
       "input": "",
       "output": "",
@@ -172,7 +172,7 @@
     },
      { 
       "name": "eq_one_two",
-      "run": "stack run -- -p eq_one_two",
+      "run": "stack test --test-arguments '-p eq_one_two'",
       "setup": "",
       "input": "",
       "output": "",
@@ -182,7 +182,7 @@
     },
      { 
       "name": "eq_two_two",
-      "run": "stack run -- -p eq_two_two",
+      "run": "stack test --test-arguments '-p eq_two_two'",
       "setup": "",
       "input": "",
       "output": "",
@@ -192,7 +192,7 @@
     },
      { 
       "name": "fact_zero",
-      "run": "stack run -- -p fact_zero",
+      "run": "stack test --test-arguments '-p fact_zero'",
       "setup": "",
       "input": "",
       "output": "",
@@ -202,7 +202,7 @@
     },
      { 
       "name": "fact_one",
-      "run": "stack run -- -p fact_one",
+      "run": "stack test --test-arguments '-p fact_one'",
       "setup": "",
       "input": "",
       "output": "",
@@ -212,7 +212,7 @@
     },
      { 
       "name": "fact_two",
-      "run": "stack run -- -p fact_two",
+      "run": "stack test --test-arguments '-p fact_two'",
       "setup": "",
       "input": "",
       "output": "",
@@ -222,7 +222,7 @@
     },
      { 
       "name": "fact_three",
-      "run": "stack run -- -p fact_three",
+      "run": "stack test --test-arguments '-p fact_three'",
       "setup": "",
       "input": "",
       "output": "",

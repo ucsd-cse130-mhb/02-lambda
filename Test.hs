@@ -5,10 +5,11 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
 import Data.IORef
+import Test.Tasty
 import Test.Tasty.HUnit
+import Test.Tasty.Runners
 import System.Exit
 import Control.Exception
-import Test.Tasty
 import Language.Elsa
 import System.FilePath
 
@@ -183,7 +184,7 @@ type Score = IORef (Int, Int)
 runTests :: [Score -> TestTree] -> IO ()
 runTests groups = do
   sc <- initScore
-  defaultMain--WithIngredients (includingOptions coreOptions : defaultIngredients)
+  defaultMainWithIngredients (includingOptions coreOptions : defaultIngredients)
     (tests sc groups) `catch` (\(e :: ExitCode) -> do
       (n, tot) <- readIORef sc
       putStrLn ("OVERALL SCORE = " ++ show n ++ " / "++ show tot)
