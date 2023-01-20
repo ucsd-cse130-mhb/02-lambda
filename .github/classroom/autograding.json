@@ -1,34 +1,34 @@
 {
   "tests": [
      { 
-      "name": "suc_one",
-      "run": "stack run -- -p suc_one",
+      "name": "or_ff_tt",
+      "run": "stack run -- -p or_ff_tt",
       "setup": "",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 15
     },
      { 
-      "name": "add_one_zero",
-      "run": "stack run -- -p add_one_zero",
+      "name": "snd_snd_pairs",
+      "run": "stack run -- -p snd_snd_pairs",
       "setup": "",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 15
     },
      { 
-      "name": "add_one_two",
-      "run": "stack run -- -p add_one_two",
+      "name": "third_triple",
+      "run": "stack run -- -p third_triple",
       "setup": "",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 15
     },
      { 
       "name": "skip1_false",

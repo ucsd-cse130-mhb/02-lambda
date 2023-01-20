@@ -35,7 +35,7 @@ i.e. substituting equals for equals.
 
 The assignment is in the files:
 
-1. `tests/01_plus.lc`
+1. `tests/01_pair.lc`
 2. `tests/02_minus.lc`
 3. `tests/03_fact.lc`
 

@@ -18,23 +18,23 @@ main = runTests [unit1]
 unit1 :: Score -> TestTree
 unit1 sc = testGroup "Unit 1"
   [ mkTest
-      (check "01_plus.lc")
-      "suc_one"
+      (check "01_pair.lc")
+      "or_ff_tt"
       True
-      10
-      "add: suc_one"
+      15
+      "booleans: or_ff_tt"
   , mkTest
-      (check "01_plus.lc")
-      "add_one_zero"
+      (check "01_pair.lc")
+      "snd_snd_pairs"
       True
-      10
-      "add: add_one_zero"
+      15
+      "pairs: snd_snd_pairs"
   , mkTest
-      (check "01_plus.lc")
-      "add_one_two"
+      (check "01_pair.lc")
+      "third_triple"
       True
-      10
-      "add: add_one_two"
+      15
+      "tuples: third_triple"
   , mkTest
       (check "02_minus.lc")
       "skip1_false"

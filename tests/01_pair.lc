@@ -22,16 +22,21 @@ let TRD3   = \t -> t (\x y z -> z)
 -- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS
 -------------------------------------------------------------------------------
 eval or_ff_tt :
-  OR FALSE TRUE
-  -- (a) fill in your reductions here
+      OR FALSE TRUE
+      -- (a) fill in your reductions here
   =d> TRUE
 
-eval add_one_zero :
-  SND (SND (PAIR apple (PAIR banana grape)))
-  -- (b) fill in your reductions here
+eval snd_snd_pairs :
+      SND (SND (PAIR apple (PAIR banana grape)))
+  =d> SND (SND ((\x y b -> b x y) apple ((\x y b -> b x y) banana grape)))
+  =b> SND (SND ((\x y b -> b x y) apple ((\y b -> b banana y) grape)))
+  =b> SND (SND ((\x y b -> b x y) apple (\b -> b banana grape)))
+  =b> SND (SND ((\y b -> b apple y) (\b -> b banana grape)))
+  =b> SND (SND (\b -> b apple (\b -> b banana grape)))
+      -- (b) fill in your reductions here to complete the evaluation
   =d> grape
 
 eval third_triple :
-  TRD3 (TRIPLE apple banana grape)
-  -- (c) fill in your reductions here
+      TRD3 (TRIPLE apple banana grape)
+      -- (c) fill in your reductions here
   =d> grape
